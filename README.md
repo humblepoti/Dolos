@@ -8,6 +8,6 @@ To compile Dolos, use Maven with the following command:
  
 After compilation you can execute Dolos with the following command (Java 11):
 
-**java -cp ~/Documents/Code/Overcome/Dolos/target/Dolos-1.0-jar-with-dependencies.jar com.poc.soot.dolos.App -a ./<APK>.apk -o ./outputDir**
+**java -cp Dolos-1.0-jar-with-dependencies.jar com.poc.soot.dolos.App -a ./<APK>.apk -o ./outputDir**
 
 It's worth to note that Dolos doesn't remove anti-tampering checks. This is a work in progress due to lack of enough signatures so if you have APKs with anti-tamper examples feel free to ping me.
