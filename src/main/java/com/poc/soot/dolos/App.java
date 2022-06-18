@@ -2,19 +2,9 @@ package com.poc.soot.dolos;
 
 import soot.util.Chain;
 import soot.*;
-import soot.jimple.*;
 import soot.SootMethod;
-import soot.jimple.toolkits.callgraph.CallGraph;
-import soot.javaToJimple.LocalGenerator;
-import soot.jimple.toolkits.callgraph.Edge;
 import soot.options.Options;
-import soot.toolkits.graph.ExceptionalUnitGraph;
-import soot.toolkits.graph.UnitGraph;
-
-import java.io.File;
-import java.lang.reflect.Method;
 import java.util.*;
-
 import org.apache.commons.cli.*;
 
 public class App {
