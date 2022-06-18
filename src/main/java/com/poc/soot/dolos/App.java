@@ -26,7 +26,7 @@ public class App {
     private static Boolean set_print ;
 
 
-    public static void setupSoot(String androidJar, String apkPath, String outputPath, Boolean setup_print, String method_name) {
+    public static void setupSoot(String androidJar, String apkPath, String outputPath) {
         G.reset();
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_whole_program(true);
@@ -100,7 +100,7 @@ public class App {
         String apkPath = cmd.getOptionValue("apk");
         String outputPath = cmd.getOptionValue("output");
 
-        setupSoot(androidJar, apkPath, outputPath, set_print, name_method );
+        setupSoot(androidJar, apkPath, outputPath);
 
         // print for awareness
         System.out.println(apkPath);
